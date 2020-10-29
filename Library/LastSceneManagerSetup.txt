@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/Scenes/maybe-another-scene-not-sure.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
