@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/maybe-another-scene-not-sure.unity
     guid: b2e8b8d404d96a423a264fa7363b2b86
+  - enabled: 1
+    path: Assets/Scenes/first-working.unity
+    guid: 6eed13d7e67e75bc8bfdca2b60468b0e
   m_configObjects: {}

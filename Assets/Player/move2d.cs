@@ -26,6 +26,8 @@ public class move2d : MonoBehaviour
     public float glidingSpeed = 8f;
     
     private bool facingRight = true;
+    private Vector3 originalLocalScale;
+    private Vector3 flippedLocalScale;
 
     private AudioSource background; 
 
@@ -36,6 +38,9 @@ public class move2d : MonoBehaviour
         background = GetComponent<AudioSource>();
         background.Play();
 
+        originalLocalScale = transform.localScale;
+        flippedLocalScale = originalLocalScale;
+        flippedLocalScale.x *= -1;
         rb = GetComponent<Rigidbody2D>();
         
     }
@@ -53,19 +58,25 @@ public class move2d : MonoBehaviour
         //Take care of flipping the animation accordingly, if we are moving left/right and the player is currently facing right/left, then flip.
         animator.SetFloat("Speed", Mathf.Abs(moveInput * moveSpeed));
         if(moveInput > 0 && !facingRight ) {
-            Flip();
-        } else if (moveInput < 0 && facingRight) {
-            Flip();
+            Flip(true);
+        }
+        if (moveInput < 0 && facingRight) {
+            Flip(false);
         }
 
         JumpHandler();
     }
 
-    void Flip() {
+    void Flip(bool changeToRight) {
         facingRight = !facingRight;
-        Vector3 theScale = transform.localScale;
+        if(changeToRight) {
+            transform.localScale = originalLocalScale;
+        } else {
+            transform.localScale = flippedLocalScale;
+        }
+        /*Vector3 theScale = transform.localScale;
         theScale.x *= -1;
-        transform.localScale = theScale;
+        transform.localScale = theScale;*/
     }
     
     void JumpHandler() {
@@ -104,9 +115,7 @@ public class move2d : MonoBehaviour
         }
 
         if(isGliding) {
-            Debug.Log("Checking if statement");
             if(Input.GetButtonUp("Glide")) {
-                Debug.Log("Going to stop gliding");
                 StopGliding();
             }
         }
