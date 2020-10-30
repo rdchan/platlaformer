@@ -27,10 +27,15 @@ public class move2d : MonoBehaviour
     
     private bool facingRight = true;
 
+    private AudioSource background; 
+
     public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
+        background = GetComponent<AudioSource>();
+        background.Play();
+
         rb = GetComponent<Rigidbody2D>();
         
     }
@@ -99,7 +104,9 @@ public class move2d : MonoBehaviour
         }
 
         if(isGliding) {
+            Debug.Log("Checking if statement");
             if(Input.GetButtonUp("Glide")) {
+                Debug.Log("Going to stop gliding");
                 StopGliding();
             }
         }
@@ -111,6 +118,7 @@ public class move2d : MonoBehaviour
 
     void StartGliding() {
         //stop jumping
+        isJumping = false;
         rb.velocity = new Vector2(rb.velocity.x, 0);
         isGliding = true;
         animator.SetBool("IsGliding", true);
