@@ -6,6 +6,7 @@ TagManager:
   tags:
   - bison
   - player
+  - door
   layers:
   - Default
   - TransparentFX

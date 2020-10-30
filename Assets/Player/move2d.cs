@@ -32,9 +32,11 @@ public class move2d : MonoBehaviour
     private AudioSource background; 
 
     public Animator animator;
+    private bool reachedDoor = false;
     // Start is called before the first frame update
     void Start()
     {
+        reachedDoor = false;
         background = GetComponent<AudioSource>();
         background.Play();
 
@@ -63,7 +65,6 @@ public class move2d : MonoBehaviour
         if (moveInput < 0 && facingRight) {
             Flip(false);
         }
-
         JumpHandler();
     }
 
@@ -81,6 +82,7 @@ public class move2d : MonoBehaviour
     
     void JumpHandler() {
         isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
+        animator.SetBool("IsGrounded", isGrounded);
         if(isGrounded && isGliding) {
             StopGliding();
         }
@@ -140,5 +142,14 @@ public class move2d : MonoBehaviour
         animator.SetBool("IsGliding", false);
         rb.gravityScale = walkingGravity;
         moveSpeed = walkingSpeed;
+    }
+
+    void OnTriggerEnter2D(Collider2D other) {
+        if(other.tag == "door" && !reachedDoor) {
+            reachedDoor = true;
+            moveSpeed = 0f;
+            //transform.position = other.attachedRigidbody.position;
+            animator.SetTrigger("WalkThroughDoor");
+        }
     }
 }

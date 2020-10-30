@@ -15,6 +15,18 @@ EditorBuildSettings:
     path: Assets/Scenes/maybe-another-scene-not-sure.unity
     guid: b2e8b8d404d96a423a264fa7363b2b86
   - enabled: 1
-    path: Assets/Scenes/first-working.unity
+    path: Assets/Scenes/level1.unity
+    guid: 6d3c760c3d4b8a346ba2b0c18829e4a2
+  - enabled: 1
+    path: Assets/Scenes/level2.unity
+    guid: 92488e17681d5e94f993c13140f3978b
+  - enabled: 1
+    path: Assets/Scenes/level3.unity
+    guid: 2999e80b073f42245a98af8ca05fabd1
+  - enabled: 1
+    path: Assets/Scenes/level4.unity
+    guid: a0b6a6b7dc802d240935fcdadf561019
+  - enabled: 1
+    path: Assets/Scenes/level5.unity
     guid: 6eed13d7e67e75bc8bfdca2b60468b0e
   m_configObjects: {}

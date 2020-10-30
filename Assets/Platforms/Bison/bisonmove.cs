@@ -42,39 +42,8 @@ public class bisonmove : MonoBehaviour
         transform.position = Vector3.Lerp(pos1, pos2, currVal);
         facingRight = currVal > lastVal;
         animator.SetBool("FacingRight", facingRight);
-        /*if (facingRight && (currVal < lastVal))
-        {
-            Flip(true);
-        }
-        else if(!facingRight && (currVal > lastVal))
-        {
-            Flip(false);
-        }
-        */
-
-            lastVal = currVal;
+        lastVal = currVal;
     }
-    void Flip(bool changeToRight)
-    {
-        if(this.gameObject.transform.childCount > 0) {
-            child = this.gameObject.transform.GetChild(0);
-            Vector3 theScale = child.localScale;
-            theScale.x *= -1;
-            child.localScale = theScale;
-        }
-        facingRight = !facingRight;
-        if(changeToRight) {
-            transform.localScale = originalLocalScale;
-        } else {
-            transform.localScale = flippedLocalScale;
-        }
-        /*facingRight = !facingRight;
-        Vector3 theScale = transform.localScale;
-        theScale.x *= -1;
-        transform.localScale = theScale;
-        */
-    }
-
 
 
 }
