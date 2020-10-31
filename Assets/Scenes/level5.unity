@@ -2293,7 +2293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorAnimator: {fileID: 2065522916}
   playerAnimator: {fileID: 1342357191}
-  overrideNextScene: 0
+  overrideNextScene: -1
   transitionTime: 1.5
 --- !u!95 &2065522916
 Animator:
