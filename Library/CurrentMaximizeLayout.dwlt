@@ -23,7 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 708, y: 471}
   m_MaxSize: {x: 18003, y: 14021}
   vertical: 1
-  controlID: 22730
+  controlID: 42357
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 708, y: 471}
   m_MaxSize: {x: 18003, y: 14021}
   vertical: 0
-  controlID: 22731
+  controlID: 42358
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 432, y: 471}
   m_MaxSize: {x: 14002, y: 14021}
   vertical: 1
-  controlID: 22732
+  controlID: 42359
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -190,7 +190,7 @@ MonoBehaviour:
   m_MinSize: {x: 432, y: 250}
   m_MaxSize: {x: 14002, y: 10000}
   vertical: 0
-  controlID: 22733
+  controlID: 42360
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -256,19 +256,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Dialogue
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 32
   m_LastFolders:
-  - Assets/Dialogue
+  - Assets/Scenes
   m_LastFoldersGridSize: 32
   m_LastProjectPath: C:\Users\Rishi\Documents\GameJam\platlaformer
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7c3c0000
-    m_LastClickedID: 15484
+    m_SelectedIDs: a63a0000
+    m_LastClickedID: 15014
     m_ExpandedIDs: 00000000983a00009a3a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -324,7 +324,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000524b0000886c0000383a0000423a0000543c00009c390000b63c0000e0390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -352,7 +352,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 32
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 110
+  m_DirectoriesAreaWidth: 112
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -418,9 +418,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 398.88803, y: 331.90106, z: -10.492481}
+    m_Target: {x: 4.1974897, y: 2.4456077, z: -2.8024135}
     speed: 2
-    m_Value: {x: 398.88803, y: 331.90106, z: -10.492481}
+    m_Value: {x: 4.1974897, y: 2.4456077, z: -2.8024135}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -470,9 +470,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 450.62936
+    m_Target: 17.030905
     speed: 2
-    m_Value: 450.62936
+    m_Value: 17.030905
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -737,7 +737,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -4406
+  m_LastSelectedObjectID: 41244
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -766,10 +766,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 25}
+      scrollPos: {x: 0, y: 41}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: caeeffffd0eeffffd8eeffffdeeefffff4eeffff36efffff12f0ffff58f0ffff72f0ffff6cf4ffff96f4ffff6cfaffffc4faffff5afbffffce3f0000224000002c40000058440000
+      m_ExpandedIDs: 3290ffff3a90ffff4090ffff1091ffff4491ffff5291ffffca9effffd29efffffc9effff06a6ffff30a6ffff8ea6ffffa6a6ffffe6a8ffffcabcffffd2bcffffd6bcffffeebcffff70bfffff72bfffffa0bfffff08c0ffff1ac0ffffd0eeffffd8eeffffdeeefffff4eeffff36efffff12f0ffff58f0ffff72f0ffff6cf4ffff96f4ffff6cfaffffc4faffff5afbffffce3f0000224000002c400000548d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -812,8 +812,8 @@ MonoBehaviour:
     y: 0
     width: 570
     height: 987
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
