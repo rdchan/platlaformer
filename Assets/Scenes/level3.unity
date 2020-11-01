@@ -1231,8 +1231,6 @@ MonoBehaviour:
     - 'Some paths are better travelled alone. Luckily, the universe always has a
       way of keeping us prepared. '
     - 'While in the air, hold G to use your glider. Try it out while jumping! '
-    - I don't have to be in the spirit world to know that Monk Gyatso is very proud
-      of you Aang <3
 --- !u!61 &811020441
 BoxCollider2D:
   m_ObjectHideFlags: 0
